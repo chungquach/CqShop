@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>1829047f-6b55-4034-8b6c-25180b7c65b2</ProjectGuid>
+    <ProjectGuid>{1829047F-6B55-4034-8B6C-25180B7C65B2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CQShop.UnitTest</RootNamespace>
@@ -31,24 +31,42 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CQShop.Common\CQShop.Common.csproj">
+      <Project>{16fe142c-9b9a-46af-ab23-d765ab8aefaa}</Project>
+      <Name>CQShop.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CQShop.Data\CQShop.Data.csproj">
+      <Project>{c2a37a03-30ea-47d9-9d14-36ee5e8824ef}</Project>
+      <Name>CQShop.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CQShop.Model\CQShop.Model.csproj">
+      <Project>{929fa7c4-2682-4b86-9a59-c24158c0f462}</Project>
+      <Name>CQShop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CQShop.Service\CQShop.Service.csproj">
+      <Project>{d8424e15-666d-4838-9e98-8a6c2260eb38}</Project>
+      <Name>CQShop.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CQShop.Web\CQShop.Web.csproj">
+      <Project>{3d1ae6a4-2e69-4bc0-a8ee-942417ce20a7}</Project>
+      <Name>CQShop.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

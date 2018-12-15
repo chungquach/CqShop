@@ -276,6 +276,24 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CQShop.Common\CQShop.Common.csproj">
+      <Project>{16fe142c-9b9a-46af-ab23-d765ab8aefaa}</Project>
+      <Name>CQShop.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CQShop.Data\CQShop.Data.csproj">
+      <Project>{c2a37a03-30ea-47d9-9d14-36ee5e8824ef}</Project>
+      <Name>CQShop.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CQShop.Model\CQShop.Model.csproj">
+      <Project>{929fa7c4-2682-4b86-9a59-c24158c0f462}</Project>
+      <Name>CQShop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CQShop.Service\CQShop.Service.csproj">
+      <Project>{d8424e15-666d-4838-9e98-8a6c2260eb38}</Project>
+      <Name>CQShop.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
